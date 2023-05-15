@@ -1,0 +1,7 @@
+import Yup from "./validation"
+
+export const SampleSchema = Yup.object().shape({
+    code: Yup.string()
+        .min(6)
+        .required()
+})
